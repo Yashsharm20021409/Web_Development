@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders,BackGround In CSS</title>
+    
+    <style>
+        #bg{
+            background-color: aquamarine;
+            height: 50px;
+            width: 500px;
+            /* border-width: 2px;  size of border
+            border-color: blueviolet;
+            border-style: solid; Border Type multiple are there */
+
+            /*or*/
+            border: 2px solid yellow;  /*another way to write this*/
+
+            border-radius: 6px; /*use to modify edge*/
+        }
+
+        #bg1{
+            background-color: aquamarine;
+            height: 50px;
+            width: 500px;
+
+            border-top: 2px solid yellowgreen;
+            border-bottom: 2px solid rgba(193, 21, 21, 0.493);
+            border-left: 2px solid rgb(24, 60, 118);
+            border-right: 2px solid rgb(96, 17, 73);
+
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            border-bottom-right-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+
+        #bg2{
+            height: 300px;
+            width:455px; 
+            background-image: url('https://codewithharry.com/img/logo-blue.png');
+            border: 2px solid black;
+
+            /* background-repeat: x; /*Repeat in row*/            
+            /* background-repeat: y; /*Repeat in col*/           
+            background-repeat: no-repeat; /*show one time only*/
+
+            /* Background pos */
+
+            /* background-position: center center; */
+            /* background-position: top top; */
+            /* background-position: bottom bottom; */
+            /* background-position: top center; */
+            background-position: 122px top; /*122px from x axis and at top(from vertical side only pos case) */
+           
+          }
+    </style>
+
+</head>
+<body>
+    <h3>This is Heading</h3>
+    <p id="bg">This is first paragraph</p>
+
+    <h3>This is Heading</h3>
+    <p id="bg1">This is second paragraph</p>
+
+    <h3>This is Heading</h3>
+    <p id="bg2">This is third paragraph</p>
+</body>
+</html>
