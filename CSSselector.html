@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors In CSS</title>
+
+    <style>
+        /* p tag color will change
+           --> this is example of element selector change color of every paragragh written by you
+           --> if you wan to change the color of any particular paragraph then provide id to that graph to use (id selector) ex no. 2 
+           Note :- id is unique for everyone but class is not 
+           --> Class Selector(example 3) 
+        */
+
+        /* Element Selctor */
+        p {
+            color: brown;
+            background-color: aqua;
+            border: 2px solid black;
+            /*2px = decide border width(see by change value of 2px to 5px...) */
+        }
+
+        /* Id Selector */
+        #redElement {
+            color: orange;
+        }
+
+        /* Class Selector */
+        .bgBlue {
+            color: navy;
+            background-color: blueviolet;
+        }
+
+        /* Grouping Selector */
+        footer,
+        span {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS SELECTORS</h3>
+    <p>This is simple Paragraph to Demonstrate Selectors in CSS</p>
+    <p id="redElement" class=".bgBlue">This is Another Paragraph to Demonstrate Selectors in CSS</p>
+
+    <!-- as you see here class may be used by multiple element but id not is you do so you will get error -->
+    
+    <div>
+        <p class="bgBlue">This is also one more example of Paragraph to Demonstrate Selectors in CSS</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+
+</html>
