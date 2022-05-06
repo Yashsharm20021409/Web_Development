@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+         /*Universal Selector and it can be override after given value by using id or class as shown below */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e6cbf8;
+            background-image: url('https://codewithharry.com/img/logo-blue.png');
+            background-repeat: no-repeat;
+            background-position: 600px 50px;
+            background-size: 500px;  /*gives image size (may be auto and many differ type*/
+        }
+
+        .container{
+            background-color: rgb(197, 167, 226);
+            border: 3px solid rgb(91, 11, 167);
+            border-radius: 20px;
+            width: 400px;
+
+            /* padding: 8px;  overall padding given*/ 
+            /* margin: 14PX;  overall margin given */
+
+            /*diffrent padding given from all side */
+
+            /*(top right bottom left) in one line*/
+            /* padding: 23px 56px 6px 78px; */
+
+            /* padding: y(top/bottom) x(left/right) */
+            padding: 65px 45px;
+
+            /* padding-top: 8PX;
+            padding-right: 7PX;
+            padding-bottom: 6px;
+            padding-left: 5px;  */
+
+            /* different marging given from all side */
+
+            /*(top right bottom left) in one line*/
+            /* margin:20px 30px 25px 35px ;  */
+
+            /* margin: y(top/bottom) x(left/right) */
+            margin: 15px 10px;
+
+            /* margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 25px;
+            margin-right: 35px; */
+
+
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa ea sequi corrupti, quas veniam? Minus mollitia obcaecati quis facere ullam nostrum aliquam, hic dolores provident dolore, reprehenderit, est totam.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Second Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa ea sequi corrupti, quas veniam? Minus mollitia obcaecati quis facere ullam nostrum aliquam, hic dolores provident dolore, reprehenderit, est totam.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my third Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa ea sequi corrupti, quas veniam? Minus mollitia obcaecati quis facere ullam nostrum aliquam, hic dolores provident dolore, reprehenderit, est totam.</p>
+    </div>
+</body>
+</html>
