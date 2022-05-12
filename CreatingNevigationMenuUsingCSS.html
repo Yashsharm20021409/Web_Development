@@ -3,40 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navigation</title>
+    <title>Navigation Menu</title>
     <style>
-        .navbar{
-            background-color: black;
-            border-radius: 30px;
-            
+        .navbar {
+            background-color: rgb(75, 140, 162);
+            border-radius: 25px;
         }
-        .navbar ul{
+
+        .navbar ul {
             overflow: auto;
+            /*to show border colors because after flaot all the element of ul overflow */
         }
-        .navbar li{
-            float:left;
-            list-style: none; 
-            margin: 13px 20px;
-            
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /*To remove bullets it shown them because it is list */
+            margin: 13px 20px;  /*
+            Margin x,y(just to understand this)  x = To move button from down to bottom and y for widhth from left right to right side(straching) 
+            Same thing you can do with the halp of padding top...
+            */
+
+            /*Inc size of menu*/
         }
-        .navbar li a{
-            padding: 3px 3px;
-            text-decoration: none;
-            color: white;
-        }
+
         .navbar li a:hover{
-            color: red
+            /* background-color: rgb(191, 211, 236); */
+            color: rgb(191, 211, 236) ; /*Looks good with this*/
+            border-radius: 10px;
         }
-        .search{
+
+        .navbar li a {
+            color: rgb(8, 52, 87);
+            padding: 3px 3px;
+
+            text-decoration: none;
+
+        }
+
+        .Search {
+            padding: 12px 74px;
             float: right;
             color: white;
-            padding: 12px 75px;
+            
         }
+
+        /*Use CSS in Input tag inside navbar */
         .navbar input{
-            border: 2px solid black;
-            border-radius: 14px;
+            /* border: 2px solid rgb(191, 211, 236); */
+            border: 2px rgb(191, 211, 236);;
+            border-radius: 15px;
             padding: 3px 17px;
             width: 129px;
         }
@@ -44,15 +62,21 @@
 </head>
 
 <body>
+    <!-- <header> The <header> HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
     <header>
+
+        <!-- The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes -->
         <nav class="navbar">
             <ul>
+                <!-- we use anchor tag here to provide link on navigation bar -->
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact us</a></li>
-                <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search this website">
+                <li><a href="#">Contact Us</a></li>
+
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="Search this website">
+                    <!-- placeholder to write something on text field -->
                 </div>
             </ul>
         </nav>
