@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Positions:- static(default),relative,absolute,fixed,sticky-->
+
+    <!--   relative: Positions the element relative to its normal positon and will leave a gap at its normal position
+    
+           absolute: Positions the element relative to the positon of its first parent
+
+           fixed: Positions the element relative to the browser window(pos remian fia at broswer not change on scroll)
+
+           sticky: Positions the element relative to the users scroll position
+     -->
+
+    <!-- 
+         ********************************************Important Note*************************************************
+
+         Fixed and sticky are both similar, but 
+         If you make a  particular element inside a container as fixed, then irrespective of container height, as we scroll, the 
+         element stays at the same position till you scroll to end of web page.
+
+         If you make an element as sticky and if its inside a container, then as you scroll, the element will be in the same position until the 
+         container height. While scrolling, if the container is also scrolled down, then the sticky element in the container will also move top with container.
+
+         i.e., sticky will be fixed only till the end of the container, But fixed will be fixed until the end of web page.
+      -->
+
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: lightgrey;
+            height: 4000px;
+            /*height of container is changed not of boxes*/
+        }
+
+        .box {
+            border: 2px solid blueviolet;
+            height: 100px;
+            width: 150px;
+            margin: 2px 2px;
+            display: inline-block;
+            /*Remove unnecssary space occupied by div box(and all box comes into one line only) with the help of width*/
+        }
+
+        #box3 {
+            /* Relative:- container/box moves(make gap from current pos) to its relative(current) pos by using top,bottom,left,right*/
+            /* position: relative;
+            top: 20px;
+            left: 30px;
+            right: 20px;
+            bottom: 10px; */
+
+            /* Absolute:- move relative to the parent(cotainer) BOX3 MOVE RELATIVE TO ITS PARENT(CONTAINER:- CONTAIN ALL THE BOXES)*/
+
+            /* position: absolute; */
+            /* top: 20px;
+            left: 30px;
+            right: 20px;
+            bottom: 10px; */
+
+            /*position: fixed; /*postion remain at same postiona fter we scroll down to below mostly use in chatbot etc.*/
+            /* right: 10px;
+            top: -1px; */
+
+            position: sticky;
+            /*mostly use in navigation bar*/
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
