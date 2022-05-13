@@ -1,3 +1,5 @@
+<!-- Inline and block element use -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Property</title>
+
+    <style>
+
+        header{
+            border: 2px solid red;
+            /* display: inline; only necessary space required is shown */
+            display: block; /*whole block is occupied not only necassary ones*/
+            margin: auto; 
+
+            width: 853px;     /*Align data of header in centre  if margin is auto in header it also help to move data into the centre*/
+            
+        }
+        img{
+            width: 40px;
+
+            /*both display and margin is used for to get img at centre*/
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;/*On responsive display to control overflow of text from centre*/
+            margin: 0px;
+        }
+
+        .box{
+            border: 2px solid black;
+            background-color: grey;
+
+            margin: 10px 6px; /*Tpo make gap between all the box*/
+            padding: 10px 10px;
+            border-radius: 10px;
+
+
+            /* After these tow below function you can bring all three box in same line parallel */
+            display: inline-block; /* box behave as inline component and occupied only specified space and not  affect after setting the width of an box (after this all box comes under container*/
+            width: 267px;
+            box-sizing: border-box;/*if you want your widhth remian same on change padding or margin it doesnt affect the box postion use this*/
+        }
+
+        .container{
+            /*both these manage pos of container by widht of container and box you can manage pos of box*/
+            margin: auto;
+            width: 849px; 
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="top">
+        <img src="https://codewithharry.com/img/logo-blue.png" alt="cartoon">
+        <h3>This is Yash's Blog</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolor, a atque magni delectus eos quidem dignissimos nemo nisi modi dicta nam recusandae non esse, voluptate, iste laborum itaque incidunt.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolor, a atque magni delectus eos quidem dignissimos nemo nisi modi dicta nam recusandae non esse, voluptate, iste laborum itaque incidunt.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolor, a atque magni delectus eos quidem dignissimos nemo nisi modi dicta nam recusandae non esse, voluptate, iste laborum itaque incidunt.</p>
+        </div>
+    </div>
 </body>
 </html>
