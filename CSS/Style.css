@@ -1,0 +1,60 @@
+.logo{
+    border: 2px solid yellow;
+    /* margin: auto; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    width: 11%;
+}
+
+.logo img{
+    width: 70%;
+    /* filter: invert(); change color of img from black to white */
+}
+
+.logoclass{
+    font-size: 10px;
+}
+
+.nav{
+    margin: auto;
+    display: block;
+    width: 33%;
+    margin: 20px auto; /*nav div comes at centre*/
+    border: 2px solid green;
+    
+}
+
+
+.buttons{
+    border: 2px solid red;
+    /* margin: auto; */
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    /* padding: 20px; */
+    
+}
+
+
+/* Manage navigation bar */
+
+.navbar li{
+    display: inline-block; /*Manage all the content in one line*/
+    margin: 2px 10px; /*for manage gap between content*/
+    font-size: 20px;
+}
+
+/* Manage content of a navigation bar */
+
+.navbar li a{
+    color: white;
+    text-decoration: none; /*to remove below line of a link(a)*/
+}
+
+.navbar li a:hover{
+    color: gray;
+    text-decoration: underline;
+}
