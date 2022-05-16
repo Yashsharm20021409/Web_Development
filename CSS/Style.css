@@ -1,5 +1,5 @@
 .logo{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* margin: auto; */
     display: inline-block;
     position: absolute;
@@ -30,12 +30,12 @@
 
 
 .buttons{
-    border: 2px solid red;
+    /* border: 2px solid black; */
     /* margin: auto; */
     display: inline-block;
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 30px;
     /* padding: 20px; */
     
 }
@@ -61,11 +61,11 @@
 /* Manage navigation bar */
 
 .nav{
-    margin: auto;
+    /* margin: 12px auto; */
     display: block;
     width: 33%;
-    margin: 20px auto; /*nav div comes at centre*/
-    border: 2px solid green;
+    margin: 32px auto; /*nav div comes at centre*/
+    /* border: 2px solid black; */
     
 }
 
@@ -85,4 +85,52 @@
 .navbar li a:hover{
     color: gray;
     text-decoration: underline;
+}
+
+/* From-group */
+.container{
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 33%;
+    margin:  118px 59px;;
+    padding: 27px 20px;
+}
+
+.container h4{
+    text-align: center;
+}
+
+.from-group input{
+    border: 2px solid white;
+    text-align: center;
+
+    display: block;
+
+    padding: 5px 5px;
+    margin: 4px auto; /** by using display block and margin x auto me tend anything into the auto**/
+    width: 55%;
+    border-radius: 8px;
+    font-size: 10px;
+    font-family: 'Macondo', cursive;
+}
+
+#btn1{
+    display: block;
+    margin: 18px auto;
+    width: 75px;
+    padding: 6px 8px;
+    text-align: center;
+
+}
+
+#AboutUs{
+    /* border: 2px solid white; */
+    margin: 525px 180px;
+    padding: 35px 171px;
+    width: 599px;
+    text-align: center;
+}
+
+#AboutUs h4{
+    font-size: 20px;
 }
