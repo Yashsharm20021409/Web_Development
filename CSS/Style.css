@@ -1,29 +1,31 @@
 .logo{
-    border: 2px solid yellow;
+    border: 2px solid black;
     /* margin: auto; */
     display: inline-block;
     position: absolute;
     left: 34px;
     top: 20px;
     width: 11%;
+    /* margin-left: 20%; */
 }
 
 .logo img{
-    width: 70%;
-    /* filter: invert(); change color of img from black to white */
+    width: 50%;
+    margin-left: 25%;
+     /*change color of img from black to white */
+    filter: invert(); 
 }
 
 .logoclass{
     font-size: 10px;
 }
 
-.nav{
-    margin: auto;
-    display: block;
-    width: 33%;
-    margin: 20px auto; /*nav div comes at centre*/
-    border: 2px solid green;
-    
+.logo div{
+    text-align: center;
+    font-size: 90%;
+    /*height of text from logo*/
+    line-height: 40px;  
+
 }
 
 
@@ -38,8 +40,34 @@
     
 }
 
+.btn{
+    border: 2px solid grey;
+    border-radius: 8px;
+    cursor: pointer;
+
+    margin: 2px 7px;
+    color: white;
+    background-color: black;
+    padding: 5px 6px;
+    font-size: 15px;
+    font-family: 'Macondo', cursive;
+}
+
+.btn:hover{
+    color: lightgray;
+}
+
 
 /* Manage navigation bar */
+
+.nav{
+    margin: auto;
+    display: block;
+    width: 33%;
+    margin: 20px auto; /*nav div comes at centre*/
+    border: 2px solid green;
+    
+}
 
 .navbar li{
     display: inline-block; /*Manage all the content in one line*/
