@@ -1,0 +1,42 @@
+/* Z-index (not work with position static) only work with all remaining postions(absolute,relative,sticky,fixed) */
+/* By-Default postion is (Static) */
+
+/* z-index :- ex:if there are 4 box and overlap eachother then z-index decide which one show over other
+   box having large z-index shown/display over otherone
+
+   see differnce in padding and all using chrome tool(check area occupied)
+*/
+.box {
+    border: 2px solid black;
+    height: 170px;
+    width: 170px;
+}
+
+#box1 {
+    background-color: red;
+    position: relative;
+    top: 50px;
+    z-index: 700;
+
+}
+
+#box2 {
+    background-color: green;
+    position: relative;
+    top: 14px;
+    z-index: 200;
+
+}
+
+#box3 {
+    background-color: yellowgreen;
+
+    /* through this only box is hidden occupied area is remain same(will hide the element but will show its empty space) */
+    /* visibility: hidden; */
+    /*through this area occupied also remove (will hide the element and the space)*/
+    /* display: none;  */
+}
+
+#box4 {
+    background-color: burlywood;
+}
