@@ -1,5 +1,5 @@
 .container{
-    height: 1230px;
+    height: 230px;
     width: 100%;
     border: 2px solid greenyellow;
     /* Initiliaze the container as flex box */
@@ -41,6 +41,14 @@
     justify-content: space-evenly;
     /* Same space comes on left and right side of a container don't confuse between space of container because it is sum of two spaces of two containersS*/
     justify-content: space-around;
+
+    /*V.IMP:- Align item vertical at flex-start(default) ,flex-end,center */
+    align-items: center;
+    /* Make vertical evenly space only work with flex-wrap */
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    
 }
 
 /* in class put all that things you want same in every container */
