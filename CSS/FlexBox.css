@@ -5,12 +5,12 @@
     /* Initiliaze the container as flex box */
     display: flex; /*all the element comes into one line after this Now u can use flex properties here*/
 
-    /*Flex Properties for Flex container */
+    /*ALL these are Flex Properties for Flex container */
 
     /* Below instruction overwrite above instruction/property here */
 
     /*by default container align in row */
-    flex-direction: row;  
+    /* flex-direction: row;   */
     /*container align in column */
     /* flex-direction: column;      */
      /*Reverse the directions of boxes in row axis*/
@@ -31,23 +31,23 @@
 
     /* Shortend for wrap and direction */
 
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
 
     /* To make container/item in center and remain in centre for every kind of devices */
-    justify-content: center;
+    /* justify-content: center; */
     /* Make equal spaces only between the containers not at end sides*/
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* start to end spaces is same between and end sides */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* Same space comes on left and right side of a container don't confuse between space of container because it is sum of two spaces of two containersS*/
-    justify-content: space-around;
+    /* justify-content: space-around; */
 
     /*V.IMP:- Align item vertical at flex-start(default) ,flex-end,center */
-    align-items: center;
+    /* align-items: center; */
     /* Make vertical evenly space only work with flex-wrap */
-    align-items: stretch;
+    /* align-items: stretch;
     align-items: flex-start;
-    align-items: flex-end;
+    align-items: flex-end; */
     
 }
 
@@ -59,4 +59,49 @@
     padding: 2px;
     height: 100px;
     width: 100px;
+}
+
+
+/* Now we learn about Flex property for item above we learn flex property for container */
+
+/* 
+1. Element with greater order display at last
+2. Flex grow:- when size of screen is increase and any itm use flex-grow then that item width grow acc to size 
+   of screen and not acquire of push isde element into next line and when size of screen decrease it will 
+   automatically decrease it can also applied at all item and manage space by default9(-ve no. are invalid)
+
+3. Flex Shrink:- decrease size by defualt accn to display size item having large  number get more shrink
+4. Flex Basis:- manage size(width) of an item which easily get manage in resposnsive site
+  ---->  when flex-direction is set to row flex-basis: will control width 
+  ---->  when flex-direction is set to column flex-basis: will control height
+
+5. align-self:- item align itself at end at centre at start int its intial (col) jha already h use col me align hoga sb jga where you want
+*/
+#item-1{
+    /* order: 4; */
+
+    /* flex-grow: 3; 
+    flex-shrink: 2; */
+
+    /* flex-basis: 320px; */
+}
+#item-2{
+    /* order: 2; */
+    /* flex-grow: 2;
+    flex-shrink: 1; */
+}
+#item-3{
+    /* order: 1; */
+    /* flex-grow: 4;
+    flex-shrink: 3; */
+
+    /* Shorthand  for (flex-grow flex-shrink flex-basis) */
+    /* flex: 2 3 222px; */
+
+
+    /* Very imp */
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+
 }
