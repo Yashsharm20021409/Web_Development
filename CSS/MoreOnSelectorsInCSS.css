@@ -1,0 +1,38 @@
+h1{
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+/* 
+property applied on any <p> inside div it may either present in li also if p found property applied
+div p{
+    color: black;
+    font-weight: bold;
+}
+
+Affect only <p> presnt inside li but only on <p> if you add another row without <p>  then that row not able to use this property
+ /* if p is contained by any li which is contained by div */
+ 
+div li p{
+    color: red;
+    font-weight: bold;
+} 
+*/
+
+/*property applied on <p> comes which directely(imp point) comes after any number of div present in html */
+/* if p is right inside div then this CSS will be applied */
+
+/* div > p{
+    color: black;
+    font-weight: bold;
+} */
+
+/* That paragraph whose just previous sibling is div */
+/* if p is right after div i.e p is the next sibling of div*/
+
+div + p{
+    background-color: aqua;
+    font-weight: bold;
+    color: black;
+}
