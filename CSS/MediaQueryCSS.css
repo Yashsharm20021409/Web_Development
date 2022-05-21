@@ -1,0 +1,41 @@
+.box {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    display: none;
+}
+
+/* These all are condition given when this condition full fill media query get executed */
+
+/* When width of screen become 300px or less this media get executed */
+/* After add Screen this query apply only for screen */
+@media only screen and (max-width: 300px) {
+    #box1-1 {
+        display: block;
+        background-color: cyan;
+    }
+}
+
+/* When width of screen become bw 300 to 500px this media get executed */
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    #box1-2 {
+        display: block;
+        background-color: blueviolet;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    #box1-3{
+        display: block;
+        background-color: yellowgreen;
+    }
+}
+
+@media only screen and (min-width:800px){
+    #box1-4{
+        display: block;
+        background-color: grey;
+    }
+}
+
