@@ -1,0 +1,61 @@
+.container{
+    border: 2px solid black;
+    /* Below three line tend any element or container to centre (width is any number)*/
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+/*After using this selector all type of inputs  get modified */
+
+input{
+    display: block;
+}
+
+/*After using this selector you can modified only specified input property*/
+
+input[type="text"]{
+    padding: 10px;
+    margin: 30px;
+    background-color: red;
+}
+
+/* <a> tag whose target is set */
+a[target]{
+    color: violet;
+    
+}
+
+input[type="email"]{
+    border: 2px solid brown;
+    color: aqua;
+}
+
+
+/* n-th child pseudo Selector in css */
+
+/* change property at 3rd pos 3 is given here in braces */
+li:nth-child(3){
+    color: aqua;
+}
+
+/* Every second child acquire this prop if there is 3n+0 every 3rd child... */
+/* 2n+0 = every 2nd child and 0 as n=0,1,2,3... */
+
+li:nth-child(2n+0){
+    color: orange;
+}
+
+li:nth-child(2n+2){
+    color: orange;
+}
+
+/* odd/even child */
+
+li:nth-child(odd){
+    background-color: yellow;
+}
+
+li:nth-child(even){
+    background-color: yellowgreen;
+}
