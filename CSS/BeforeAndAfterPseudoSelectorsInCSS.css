@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+/* Imp technique to modify ur website using after and before selectors and using opacity */
+
+header::before{
+    /* below 7 lines are must */
+    content: "";
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* as we known elemn or container with large z-index show above and we set z-ind of this at -1 which is less */
+    z-index: -1;
+    /* Reduce image brightness and image shown light now */
+    opacity: 0.5;
+}
+
+.navigation{
+    display: flex;
+    font-size: 18px;
+    font-family: 'Bad Script', cursive;
+}
+
+/* to make navigation at center */
+.navbar{
+    display: block;
+    margin: auto;
+    width: 33%;
+
+}
+
+li{
+    list-style: none;
+    padding: 20px 23px;
+}
+/* li a{
+    display: flex;
+    text-align: center;
+} */
+a{
+    color: white;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    text-decoration: dashed;
+    color: grey;
+}
+
+section{
+    font-family: 'Bree Serif', serif;
+    height: 300px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    margin: 0px 218px;
+    /* Align items at center */
+    align-items: center;
+    /* Make alignmnet vertically from its place*/
+    justify-content: center;
+    
+}
+
+h1{
+     /* Mostly used rem */
+    font-size: 3rem;
+}
+p{
+    text-align: center;
+}
+
+/* You can insert content using this before pseudo selector and same for after */
+/* section::before{
+    content: "This is the content";
+} */
+/* section::after{
+    content: "This is the content";
+} */
