@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+}
+.card{
+    border: 2px solid red;
+    padding: 23px 12px;
+    margin: 23px 12px;
+    background-color: burlywood;
+
+    /* 
+       box-shadow: x,y,color 
+       or  
+       box-shadow: x,y,blurradius(lighting the shadow),color
+       or
+       box-shadow: x,y,blurradius,spreadradius(area cover by shadow)color
+    */
+
+    /* box-shadow: -5px -5px lightcoral; */
+    /* box-shadow: 5px 5px lightcoral; */
+    /* box-shadow: 5px 5px 10px 5px lightcoral; */
+
+    /* alpha decide darkness of a color range -2<a<1*/
+    /* box-shadow: 5px 5px 10px 5px rgb(73, 133, 193,0.8); */
+
+    /* shadow eefect towards inside */
+    /* box-shadow: inset 5px 5px  orange; */
+
+    /* Multishadow */
+    box-shadow: 5px 5px  orange, 8px 8px red;
+}
+
+.card h2{
+    /* 
+       text-shadow: x,y,color 
+       or  
+       text-shadow: x,y,blurradius(lighting the shadow),color
+       or
+       text-shadow: x,y,blurradius,spreadradius(area cover by shadow)color
+    */
+    /* text-shadow: 1px 1px white; */
+    text-shadow: 5px 5px 10px red;
+}
