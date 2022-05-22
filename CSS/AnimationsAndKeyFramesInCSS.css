@@ -1,0 +1,27 @@
+.container{
+    background-color: greenyellow;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+
+    /* Position must be relative */
+    position: relative;
+    /*Animation name may be anything*/
+    animation-name: yash; 
+    animation-duration: 2s;
+    /* Number of times animation run */
+    animation-iteration-count: 3;
+}
+
+@keyframes yash{
+    /* Animation Initial pos and Final pos */
+    from{
+        width: 200px;
+    }
+    to{
+        width: 400px;
+    }
+}
