@@ -1,8 +1,8 @@
-.container{
+.container {
     background-color: greenyellow;
 }
 
-.box{
+.box {
     height: 150px;
     width: 150px;
     background-color: green;
@@ -10,18 +10,70 @@
     /* Position must be relative */
     position: relative;
     /*Animation name may be anything*/
-    animation-name: yash; 
-    animation-duration: 2s;
+    /* animation-name: yash;  */
+    animation-name: yash2;
+    /* Decide speed of animation */
+    animation-duration: 8s;
     /* Number of times animation run */
-    animation-iteration-count: 3;
+    animation-iteration-count: 1;
+    /* animation-iteration-count: infinite; */
+
+    /* After no. of given iteration animation get stop at its final position */
+    /* animation-fill-mode: forwards; */
+    /* teriminate at its initial pos after number of given iteration */
+    /* animation-fill-mode: alternate; */
+
+    /*ease-in:- animation slow at initial time and became fast after that */
+    /*ease-out:- animation fast at initial time and became slow */
+    /*ease-in-out:- animation fast at intial and final pos but slow in between */
+    /* animation-timing-function: ease-in-out; */
+
+    /* animation start after 5s */
+    /* animation-delay: 5s; */
+
+    /* animation shown in rev direction */
+    animation-direction: reverse;
+
+
+    /* These properties can be set using this shorthand */
+    /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+    /* animation: harry 5s ease-in 1s 12 backwards; */
+
 }
 
-@keyframes yash{
+@keyframes yash {
+
     /* Animation Initial pos and Final pos */
-    from{
+    from {
         width: 200px;
     }
-    to{
-        width: 400px;
+
+    to {
+        width: 1400px;
+    }
+}
+
+@keyframes yash2 {
+
+    /* 0-25% between this do this, 25-75% between this do this, 75-100% between this do this */
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 250px;
+        left: 0px;
+    }
+
+    75% {
+        top: 250px;
+        left: 250px;
+    }
+
+    100% {
+
+        top: 0px;
+        left: 250px;
     }
 }
