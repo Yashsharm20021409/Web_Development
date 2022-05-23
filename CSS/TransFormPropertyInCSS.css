@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+
+    /* Rotate box to 45deg */
+    /* transform: rotate(45deg); */
+
+    /* or */
+    transition: all 1s ease-in-out;
+}
+
+.box:hover {
+    /* transform: rotate(360deg); */
+    /* transform: skew(40deg); */
+    /* Size of item inc on hover */
+    /* transform: scale(2); */
+    /* Shift towards right/horizontally */
+    /* transform: translateX(123px); */
+    /* Shift towards right/horizontally */
+    /* transform: translateY(123px); */
+    /* Shift diagonally downwords translate(x,y) */
+    transform: translate(123px, 123px);
+}
