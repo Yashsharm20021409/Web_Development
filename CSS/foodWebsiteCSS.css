@@ -30,6 +30,8 @@
 
 .navbar ul {
     display: flex;
+   
+    font-family: 'Baloo Bhai', cursive;
 }
 
 .navbar::before{
@@ -72,6 +74,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
+    height: 250px;
 }
 
 /* to add bg img */
@@ -85,5 +88,69 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.85;
+    opacity: 0.8;
+}
+
+
+
+#home h1{
+    color: white;
+    text-align:  center;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+   
+}
+
+/* Services Section */
+
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 55px;
+    margin-top: 20px;  
+    margin-bottom: 20px; 
+}
+
+#services .box img{
+    height: 160px;
+    /* or width anything to make img centre */
+    /* width: 10px; */
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/* Utility class */
+
+.h-primary{
+    font-size: 2.5rem;
+}
+
+.btn{
+    padding: 8px 14px;
+    background: 2px solid black;
+    /* background-color: brown; */
+    color: black;
+    margin: 10px ;
+    opacity: 0.7;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.centre{
+    text-align: center;
 }
