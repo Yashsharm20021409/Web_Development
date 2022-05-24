@@ -7,6 +7,7 @@
 .navbar {
     display: flex;
     align-items: center;
+    position: relative;
     /* justify-content: center; */
 }
 
@@ -18,11 +19,11 @@
 }
 
 #logo img {
-    margin: 10px;
-    padding: 10px;
-    height: 50px;
+    margin: 6px;
+    padding: 9px;
+    height: 37px;
     width: 50px;
-    border-radius: 35px;
+    border-radius: 50px;
 }
 
 /* navigation bar: li element styling */
@@ -31,14 +32,58 @@
     display: flex;
 }
 
+.navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    opacity: 0.4;
+}
+
 .navbar li {
     list-style: none;
     font-size: 1.3rem;
 }
 
 .navbar li a{
+    color:  white;
     display: block;
     padding: 5px 20px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.navbar li a:hover{
+    color:  black;
+    background-color: white;
+}
+
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+/* to add bg img */
+#home::before{
+    content: "";
+    position: absolute;
+    /* to add any folder image */
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
 }
