@@ -74,7 +74,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-    height: 250px;
+    height:450px;
 }
 
 /* to add bg img */
@@ -118,9 +118,11 @@
 #services .box{
     border: 2px solid black;
     padding: 34px;
-    margin: 2px 55px;
+    margin: 2px 18px;
+    border-radius: 25px;
     margin-top: 20px;  
     margin-bottom: 20px; 
+    background-color: lightgray;
 }
 
 #services .box img{
