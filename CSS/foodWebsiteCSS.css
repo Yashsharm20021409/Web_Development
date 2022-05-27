@@ -74,7 +74,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-    height:450px;
+    height:470px;
 }
 
 /* to add bg img */
@@ -135,11 +135,29 @@
 
 
 
+/* Client Section */
+#client-section{
+    height: 400px;
+
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img{
+    height: 100px;
+    width: 100px;
+    margin: 29px 35px;
+}
 
 /* Utility class */
 
 .h-primary{
-    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
 }
 
 .btn{
@@ -156,3 +174,11 @@
 .centre{
     text-align: center;
 }
+
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+
