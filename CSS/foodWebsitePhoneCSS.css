@@ -3,9 +3,21 @@
     flex-direction: column;
 }
 
+.navbar ul li{
+    font-size: 1rem;
+    padding-bottom: 4px;
+}
+
 /* Home section*/
-
-
+#home{
+    height: 268px;
+}
+#home::before{
+    height: 400px;
+}
+#home p{
+    font-size: 13px;
+}
 /* Services section*/
 #services{
     flex-direction: column;
@@ -20,3 +32,8 @@
 
 
 /* footer */
+
+/* utility class */
+.h-primary{
+    font-size: 25px;
+}
