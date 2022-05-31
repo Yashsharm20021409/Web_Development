@@ -1,0 +1,30 @@
+.container{
+    /* after this all the item of container became grid and container itself also became grid */
+    /* to understand this clearly remove height and width */
+    display: grid;
+    /* number of parameter = number of column and that parameter reprent the width of the column */
+    /* grid-template-columns: 300px 100px 100px; */
+    /* grid-template-columns: 300px 200px 200px; */
+    /* grid-template-columns: 300px auto 100px ; */
+    /* grid-template-columns: 300px 100px auto; */
+
+    /* width 1 part col1 , 4part of width gives to col2 , 1part of width to col3 */
+    /* grid-template-columns: 1fr 4fr 1fr; */
+
+    /* If there are multiple columns abvouisly you don't want to do that for every col so use below function */
+    /* 9 = number of col formed && auto = widht of every col is auto */
+    /* grid-template-columns: repeat(9 , auto); */
+    grid-template-columns: repeat(3 , auto);
+    /* set gap of 2rem in horizontal and vertical direction */
+    grid-gap: 2rem;
+}
+
+.item{
+    /* see differnce by changing the height and width */
+    /* height: 100px;
+    width: 100px; */
+    background-color: aquamarine;
+    border: 2px solid black;
+    /* margin: 2px ; */
+    padding: 10px 3px;
+}
