@@ -1,0 +1,29 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 2fr; */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    /* grid-column-gap:2rem;
+    grid-row-gap:2rem; */
+    /* do above both using 1 line code equal for row and col*/
+    grid-gap: 2rem;
+}
+.item{
+    background-color:cadetblue;
+    border:2px solid black ;
+    padding: 20px;
+}
+
+/* first-child is pseudo selector here and point to box-1 */
+.item:first-child{
+    /*Note:- from line 1 to line 3 not box1 to box3 */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    */
+
+    /* shortcut to do above style (span 3) is span 3 boxes*/
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+} 
