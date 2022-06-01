@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: 112px 112px 112px; */
+    /* to decrease size of the box with the dec in size of screen use unit(fr) */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* number of columns and rows manage itself when size of the screen is inc or dec */
+    /* minmax here 300px = min width 1fr is max widhth */
+
+    /* Note:- this is halp to make the website responsive */
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.item{
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 20px;
+}
