@@ -7,12 +7,16 @@ header{
     background-color: black;
     height: 66px;
     color: white;
+    border: 2px solid whitesmoke;
+    padding: 10px 10px;
+    margin: 10px 10px;
 }
 .content{
     /* vh:- view height */
     height: 85.4vh;
     background-color: orange;
     color: white;
+    box-sizing: border-box;
 }
 
 footer{
