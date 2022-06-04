@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 66px;
+    color: white;
+}
+.content{
+    /* vh:- view height */
+    height: 85.4vh;
+    background-color: orange;
+    color: white;
+}
+
+footer{
+    background-color: cadetblue;
+    text-align: center;
+}
