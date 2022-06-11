@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+nav ul{
+    padding: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+.left{
+    height: 80vh;
+    width: 40vw;
+    float: left;
+    background-color:cadetblue;
+    color: black;
+    /* border-radius: 10px; */
+    /* text-align: center; */
+}
+.right{
+    height: 80vh;
+    width: 40vw;
+    float: right;
+    background-color: rgb(108, 189, 224);
+    color: black;
+    /* border-radius: 10px; */
+    /* text-align: center; */
+}
