@@ -58,3 +58,15 @@ let myObj = {
 console.log(myObj);
 console.log(myObj.mark);
 console.log(myObj.isActive);
+
+//another way it just a key :pair 
+let myObj1 = {
+    "name":'yash',
+    "channel":'CodeWithYash',
+    "isActive":true,
+    mark:[1,2,3,4]
+}
+
+console.log(myObj1);
+console.log(myObj1[mark]);
+console.log(myObj[isActive]);
