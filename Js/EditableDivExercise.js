@@ -23,3 +23,4 @@ input.addEventListener('blur',function(){
     localStorage.setItem('Data',JSON.stringify(input.value)); 
 })
 
+
