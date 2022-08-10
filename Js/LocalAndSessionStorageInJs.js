@@ -4,7 +4,7 @@ localStorage.setItem('Name1','Yash');
 localStorage.setItem('Name2','Love');
 
 // to clear local storage (clear entire local storage)
-// localStorage.clear();
+localStorage.clear();
 // to remove particular item
 localStorage.removeItem('Name2');
 
