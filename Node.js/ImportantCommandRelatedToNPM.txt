@@ -1,0 +1,30 @@
+1. npm  :-gives details about the npm
+2. npm init :- with the help of this Package.json file is created 
+               --> Package name auto detct
+               -->then shows version
+               -->gives discription
+               -->entry point auto detct,test command and git repo leave it 
+               -->give author and keyword name
+               -->licsense auto detct
+               -->write yes
+               -->finally a json file is created with all this info
+            
+3.npm packagename :- install the Package ex install slugify,install express
+               -->similarly uninstall Package uninstall packagename
+
+Note :- All these package are parmanent and remain in system in Package.json file inside dependencies
+
+       but you can install package for specific devlopment after that devlopment package got deleted by its own
+       and these Package are also store in Package.json but inside devDependencies
+
+       syntax :- ex npm install --save-dev 
+4.nodemon :- it start the nodejs file by its own after saving any file if any changes are made in that file
+             here we have install this package globally
+
+             syntax :- npm install --global
+
+5.npm i modulename(ex browerify) :- install the package
+
+6. version 1.2.3  1 = major version(means some funcionality has been removed), 2 = minor version some funcionality add, 3 = patch(bug fixes)
+   as you can see in package.json file ^1.2.3 (^ = indicate install exactly 1.2.3 version)
+   but is there is ~1.2.3(~ = indicate also install patch means install latest version if there)
