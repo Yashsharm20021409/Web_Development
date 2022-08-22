@@ -3,9 +3,24 @@
     margin: 0;
     padding: 0;
 }
+
+body::before{
+    content: "";
+    z-index: -1;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    background: url('static/gym.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 nav{
-    background-color: gray;
-    padding: 0px 323px;
+    background-color: #1f1c1c;
+    opacity: 0.6;
+    padding: 0px 358px;
+    width: auto;
 }
 
 ul{
@@ -15,24 +30,50 @@ ul{
 
 li{
     list-style: none;
-    padding: 25px 11px;
+    padding: 25px 21px;
 }
 li a{
-    margin: 23px 29px;
+    margin: 21px 8px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-h1{
-    margin-top: -35px;
-    margin-bottom: 20px;
-    text-align:center;
+
+.src{
+    padding: 350px 10px ;
+    margin: 10px 10px;
 }
+
 .container{
-    padding: 102px 30px;
-    background-color: antiquewhite;
+    padding: 100px 200px;
+    /* background-color: antiquewhite; */
     max-width: 70%;
     margin: 12px auto;
     text-align: center;
+    background: url('/static/cont.jpg') no-repeat center center;
+}
+
+h3{
+    /* font-size: 30px; */
+    margin-top: -60px;
+    margin-bottom: 6px;
+    text-align:center;
+    color: whitesmoke;
+}
+
+form{
+    color: white;
+    font-size: 23px;
+
+}
+
+input ,textarea{
+    /* auto push them at center display block to set one input,textarea obtain one complete row/line */
+    margin: 6px auto;
+    padding: 9px 21px;
+    display: block;
+    width: 60%;
+    border: 2px solid lightgray;
+    border-radius: 7px;
 }
