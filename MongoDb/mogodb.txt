@@ -1,0 +1,50 @@
+// *********Inserting data into Database************
+
+// Create -->use-->insert-->find data
+
+// use yashKart to open the db
+// db.items.insertOne({name:"Xiome",price:12000,Qunatity:200,rating:4.5,sold:95}) to insert the data into the database
+// Create a Array for you ---> db.items.insertOne([{name:"Xiome",price:12000,Qunatity:200,rating:4.5,sold:95},{name:"Moto",price:22000,Qunatity:300,rating:4.6,sold:195},{name:"Oppo",price:32000,Qunatity:500,rating:4.4,sold:395}])
+// db.items.insertMany([{name:"Xiome",price:12000,Qunatity:200,rating:4.5,sold:95},{name:"Moto",price:22000,Qunatity:300,rating:4.6,sold:195},{name:"Oppo",price:32000,Qunatity:500,rating:4.4,sold:395}])
+
+// db.items.find() to find the data into the database
+
+
+
+// ********to find any particular item/Searching for data in mongo db********
+
+
+
+// use dbname-->db.items.find({Parameter/filter object})
+// for greater then eual to db.items.find({rating:{$gte:3.5}})
+// for greater then  db.items.find({rating:{$gt:3.5}})
+// for greater then  db.items.find({rating:{$gt:3.5},price:{$gt:22000}})
+// for less then  db.items.find({rating:{$gt:3.5},price:{$lt:22000}})
+// Note: there is array inside or
+// for less then with or opt  db.items.find({$or:[{rating:{$lt:3.5}},{price:{$gt:22000}}]})
+// to only get one element db.items.find({price:{$gt:20000}},{name:1})
+
+
+
+
+// *********Deleting data from db**********
+
+//  1. show dbs
+//  2. use yashKart
+//  3. db.items.find({name:'Xiome})
+
+//  deleteOne will delete the matching document entry and will delete the first entry in case of multi document match
+//  4. db.items.deleteOne({name:'Xiome'}) 
+
+// deleteMany will delete the matching document entry and will delete the all entry in case of multi document match delete 
+// from table not from array if there is a table in which array also exit and you want to del multiple element then it will delete element present in table only
+//  5. db.items.deleteMany({name:'Moto'})
+
+
+
+// ***********Updating data of database**********
+
+// Update only first table ele not array ele (doesnt matter array comes first or not)in table 
+// 1. db.items.updateOne({name:"Xiome"},{$set:{price:15000}})
+// 2. db.items.updateMany({rating:4.4},{$set:{Quantity:20}})
+// 3. db.items.updateMany({rating:4.4},{$set:{Quantity:20,price:30000}})
