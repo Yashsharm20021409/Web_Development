@@ -12,7 +12,7 @@
 <!-- 1.(pwd):- is used to show your cuurent location in that server/computer after that you have to write  command (cd /) if you want to go at home-->
 <!-- 2.(cd /) :- we goes at the home of the computer -->
 <!-- 3.(ls) :- shows all the avilable item at the home  -->
-<!-- 4.(cd /home) :- you will go to the home section and similary you can visit all the location which shown after run ls command (only for home folders) -->
+<!-- 4.(cd /home) :-  used to create folder inside cd -->
 <!-- 5. after goto in particular folder again chekc is there any other folder using (ls command) is exit-->
 <!-- 5. above point continue run command (cd folderName) then you will go to that location -->
 <!-- 6.(cd ../) to comes back one previous location -->
@@ -22,3 +22,63 @@
 <!-- What is sudo user:- -->
 <!-- rem index.html //delete index.html file from cd /var/www/html/ -->
 <!-- vim index.html //create index.html file from cd /var/www/html/ -->
+
+<!-- deply app.js  -->
+
+<!-- ufw allows :- command is must to update rules -->
+
+<!-- if we terminate the process  using(ctrl+c)  the app got closed but if we give command (node app.js &) then app also work in background but if 
+     session got off due to electricity and other region again the app got closed to deal with this kind of probelm we use (pm2)
+
+      PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+                
+    - Start and add a process to the pm2 process list:
+
+      $ pm2 start app.js --name app
+
+    - Show the process list:
+
+      $ pm2 ls
+
+    - Stop and delete a process from the pm2 process list:
+  
+      $ pm2 delete app
+
+    - Stop, start and restart a process from the process list:
+  
+      $ pm2 stop app
+      $ pm2 start app
+      $ pm2 restart app
+
+    - Clusterize an app to all CPU cores available:
+
+      $ pm2 start -i max
+
+    - Update pm2 :
+
+      $ npm install pm2 -g && pm2 update
+
+    - Install pm2 auto completion:
+
+      $ pm2 completion install
+
+Check the full documentation on https://pm2.keymetrics.io/
+
+-->
